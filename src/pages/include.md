@@ -1,6 +1,11 @@
 <p class="instructions">
-	This content has been included dynamically, you can see it in a raw format here: <a href="/include">include</a>
-</p>		
+	This content has been included dynamically, you can see it in a raw format here: <a href="/include">include</a>.  This is included via a:	
+	<code>
+		// HTML with a cx-url attribute:<br/>		
+		&lt;span cx-url=&quot;${server:local}/include&quot;&gt;&lt;/span&gt;
+	</code><br/>
+	In the source page.
+</p>
 
 <style>
 	.instructions {
@@ -12,7 +17,6 @@
 	}
 	.instructions code {
 		font-size: 0.8em;
-		font-weight: bold;
 		background: rgba(var(--accent-light), 12%);
 		color: rgb(var(--accent-light));
 		border-radius: 4px;
