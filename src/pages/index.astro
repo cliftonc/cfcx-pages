@@ -10,9 +10,19 @@ import Include from '../components/Include.astro';
 		<p class="instructions">
 			This app is a static web site that is used to show how the re-write of what was Compoxure into a cloudflare worker can work.
 		</p>
+		<p class="instructions">
+			<strong>Version:</strong> <a href="https://cfcx-pages.pages.dev/">original</a> | <a href="https://cx-production.clifton-a1f.workers.dev/">composed</a>
+		</p>
+		<h3>Here is an include that should work:</h3>
 		<Include url="${server:default}/include" />
-		<Include url="${server:default}/include-404" />	
-		<Include url="${server:default}/include-403" />		
+		<h3>Here is an include that will 404:</h3>
+		<p class="instructions">			
+			<Include url="${server:default}/include-404" />	
+		</p>
+		<h3>Here is an include that will 403:</h3>
+		<p class="instructions">
+			<Include url="${server:default}/include-403" />					
+		</p>
 	</main>
 </Layout>
 
@@ -38,6 +48,13 @@ import Include from '../components/Include.astro';
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	h3 {
+		font-size: 2rem;
+		font-weight: 500;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
