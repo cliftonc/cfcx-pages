@@ -1,4 +1,12 @@
-# Astro Starter Kit: Basics
+# Astro Site for CFCX:
+
+https://github.com/cliftonc/cfcx
+
+This site:
+
+https://cfcx-pages.pages.dev/
+
+## Astro Docs
 
 ```sh
 npm create astro@latest -- --template basics
